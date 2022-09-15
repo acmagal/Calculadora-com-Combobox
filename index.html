@@ -7,26 +7,29 @@
     <title>Atividade questao 1 - Calculadora</title>
     <!---Com o defer para que o HTML carregue e depois carregue o JS, eliminando a necessidade de inserri o JS no fim da pagina-->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js" defer></script>
+    <script src="JS/scripts.js" defer></script>
 
 </head>
-
 
     <div id="titulo">
         <h1>Insira o numero:</h1>
     </div>
     
     <div id="dash">
-    <input id="numero1"> 
+    <input id="numero1" type="text" name="numero1"> 
+    
       <select id="operacao">
         <option value="soma">+</option>
-        <option value="subtrai" >-</option>
-        <option value="multiplica"> *</option>
+        <option value="subtrai">-</option>
+        <option value="multiplica">*</option>
         <option value="divide">/</option>
       </select>
-    <input id="numero2">
-      <button id="resultado">resultado</button>
+    <input id="numero2" type="text" name="numero2">
+
+    
+      <button id="resultado" onclick="calculaOperacao()">resultado</button>
       <textarea id="resposta"></textarea>
+
     </div>
     </form>
     </div>

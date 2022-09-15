@@ -1,32 +1,29 @@
-var option = document.querySelector("#soma");
-var option = document.querySelector("#subtrai");
-var option = document.querySelector("#multiplica");
-var option = document.querySelector("#divide");
-var button = document.querySelector("#resultado")
+function calculaOperacao(){
 
+	var numero1 = document.getElementById('numero1').value;
+	var numero2 = document.getElementById('numero2').value;
+  var operacao = document.getElementById('operacao').value
+	var resultado;
 
-
-var v1 = ('#numero1');
-var v2 = ('#numero2');
-var result;
           
     
 
-        if(('#operacao') =="soma"){
-        result=v1+v2;
+        if((operacao) =='soma'){
+        resultado=parseInt(numero1)+parseInt(numero2);
       } 
       
-      else if(('#operacao') =='subtrai'){
-        result=v1-v2;
+      else if((operacao) =='subtrai'){
+        resultado=parseInt(numero1)-parseInt(numero2);
       }
-       if(('#operacao') =="multiplica"){
-        result=v1*v2;
+       if((operacao) =='multiplica'){
+        resultado=parseInt(numero1)*parseInt(numero2);
       } 
       
-      else if(('#operacao') =='divide'){
-        result=v1/v2;
+      else if((operacao) =='divide'){
+        resultado=parseInt(numero1)/parseInt(numero2);
       }
 
-      ('#resposta').html(result);
+        // ('#resposta').html(resultado);
+      alert(resultado);
 
-  
+} 
