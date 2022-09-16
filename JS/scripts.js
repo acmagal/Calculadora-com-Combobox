@@ -3,6 +3,7 @@ function calculaOperacao(){
 	var numero1 = document.getElementById('numero1').value;
 	var numero2 = document.getElementById('numero2').value;
   var operacao = document.getElementById('operacao').value
+  var resposta = document.getElementById('resposta').value
 	var resultado;
 
           
@@ -23,7 +24,7 @@ function calculaOperacao(){
         resultado=parseInt(numero1)/parseInt(numero2);
       }
 
-        // ('#resposta').html(resultado);
-      alert(resultado);
+      document.getElementById('resposta').value = resultado;
+      
 
 } 
